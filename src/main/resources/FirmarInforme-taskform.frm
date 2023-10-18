@@ -1,0 +1,1 @@
+{"id":"ccf76001-bfb2-4fc9-b138-6ee24cb15de3","name":"FirmarInforme-taskform.frm","model":{"taskName":"FirmarInforme","processId":"Supervision_linea.Monitoreo_Insitu","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

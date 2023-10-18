@@ -1,0 +1,1 @@
+{"id":"3eb38021-6b45-4470-9cf4-80c25d011123","name":"GenerarProyecto-taskform.frm","model":{"taskName":"GenerarProyecto","processId":"Supervision_linea.Monitoreo_Insitu","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}

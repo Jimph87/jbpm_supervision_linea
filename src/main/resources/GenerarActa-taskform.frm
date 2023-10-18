@@ -1,0 +1,1 @@
+{"id":"f970796d-f862-4584-8656-e6609d2e9a64","name":"GenerarActa-taskform.frm","model":{"taskName":"GenerarActa","processId":"Supervision_linea.Monitoreo_Insitu","properties":[],"formModelType":"org.kie.workbench.common.forms.jbpm.model.authoring.task.TaskFormModel"},"fields":[],"layoutTemplate":{"version":3,"style":"FLUID","layoutProperties":{},"rows":[]}}
