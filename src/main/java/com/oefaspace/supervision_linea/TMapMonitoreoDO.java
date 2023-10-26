@@ -32,9 +32,6 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 
 	private java.lang.String txCodSinadaSup;
 
-	@javax.persistence.ManyToOne(fetch = javax.persistence.FetchType.EAGER, cascade = {javax.persistence.CascadeType.ALL})
-	private com.oefaspace.supervision_linea.TMapActividadDO nuIdActividad;
-
 	public TMapMonitoreoDO() {
 	}
 
@@ -118,22 +115,12 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 		this.txCodSinadaSup = txCodSinadaSup;
 	}
 
-	public com.oefaspace.supervision_linea.TMapActividadDO getNuIdActividad() {
-		return this.nuIdActividad;
-	}
-
-	public void setNuIdActividad(
-			com.oefaspace.supervision_linea.TMapActividadDO nuIdActividad) {
-		this.nuIdActividad = nuIdActividad;
-	}
-
 	public TMapMonitoreoDO(java.lang.Long nuIdMonitoreo,
 			java.lang.Integer nuNroCaso, java.lang.String txTipoSuperv,
 			java.lang.String txCodAccion, java.lang.String txExpediente,
 			java.lang.String txAccion, java.lang.String txFuenteSup,
 			java.lang.String txCodEmergSup, java.lang.String txLugarEmergSup,
-			java.lang.String txCodSinadaSup,
-			com.oefaspace.supervision_linea.TMapActividadDO nuIdActividad) {
+			java.lang.String txCodSinadaSup) {
 		this.nuIdMonitoreo = nuIdMonitoreo;
 		this.nuNroCaso = nuNroCaso;
 		this.txTipoSuperv = txTipoSuperv;
@@ -144,7 +131,6 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 		this.txCodEmergSup = txCodEmergSup;
 		this.txLugarEmergSup = txLugarEmergSup;
 		this.txCodSinadaSup = txCodSinadaSup;
-		this.nuIdActividad = nuIdActividad;
 	}
 
 }
