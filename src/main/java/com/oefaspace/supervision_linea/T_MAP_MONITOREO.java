@@ -7,29 +7,53 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class T_MAP_MONITOREO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "T_MAP_MONITOREO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "T_MAP_MONITOREO_ID_GENERATOR", sequenceName = "T_MAP_MONITOREO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "T_MAP_MONITOREO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "T_MAP_MONITOREO_ID_GENERATOR", sequenceName = "T_MAP_MONITOREO_ID_SEQ")
+	@org.kie.api.definition.type.Description(value = "Código secuencial de las supervisiones In Situ importados del INAF")
+	private java.lang.Long NU_ID_MONITOREO;
 
-    public T_MAP_MONITOREO() {
-    }
-    
-    public T_MAP_MONITOREO(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Description(value = "Código generado por el BPM por cada registro importado del INAF")
+	@org.kie.api.definition.type.Label(value = "Nro Caso")
+	private java.lang.Long NU_NROCASO;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "tipo de la supervisión")
+	private java.lang.String TX_TIPOSUPERV;
 
+	public T_MAP_MONITOREO() {
+	}
 
+	public java.lang.Long getNU_ID_MONITOREO() {
+		return this.NU_ID_MONITOREO;
+	}
 
+	public void setNU_ID_MONITOREO(java.lang.Long NU_ID_MONITOREO) {
+		this.NU_ID_MONITOREO = NU_ID_MONITOREO;
+	}
+
+	public java.lang.Long getNU_NROCASO() {
+		return this.NU_NROCASO;
+	}
+
+	public void setNU_NROCASO(java.lang.Long NU_NROCASO) {
+		this.NU_NROCASO = NU_NROCASO;
+	}
+
+	public java.lang.String getTX_TIPOSUPERV() {
+		return this.TX_TIPOSUPERV;
+	}
+
+	public void setTX_TIPOSUPERV(java.lang.String TX_TIPOSUPERV) {
+		this.TX_TIPOSUPERV = TX_TIPOSUPERV;
+	}
+
+	public T_MAP_MONITOREO(java.lang.Long NU_ID_MONITOREO,
+			java.lang.Long NU_NROCASO, java.lang.String TX_TIPOSUPERV) {
+		this.NU_ID_MONITOREO = NU_ID_MONITOREO;
+		this.NU_NROCASO = NU_NROCASO;
+		this.TX_TIPOSUPERV = TX_TIPOSUPERV;
+	}
 
 }
