@@ -7,29 +7,61 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMapActividadDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPACTIVIDADDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMAPACTIVIDADDO_ID_GENERATOR", sequenceName = "TMAPACTIVIDADDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPACTIVIDADDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMAPACTIVIDADDO_ID_GENERATOR", sequenceName = "TMAPACTIVIDADDO_ID_SEQ")
+	private java.lang.Long nuIdActividad;
 
-    public TMapActividadDO() {
-    }
-    
-    public TMapActividadDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String txCodTipoSuperv;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String txActividad;
 
+	private java.lang.String txAbreviado;
 
+	public TMapActividadDO() {
+	}
 
+	public java.lang.Long getNuIdActividad() {
+		return this.nuIdActividad;
+	}
+
+	public void setNuIdActividad(java.lang.Long nuIdActividad) {
+		this.nuIdActividad = nuIdActividad;
+	}
+
+	public java.lang.String getTxCodTipoSuperv() {
+		return this.txCodTipoSuperv;
+	}
+
+	public void setTxCodTipoSuperv(java.lang.String txCodTipoSuperv) {
+		this.txCodTipoSuperv = txCodTipoSuperv;
+	}
+
+	public java.lang.String getTxActividad() {
+		return this.txActividad;
+	}
+
+	public void setTxActividad(java.lang.String txActividad) {
+		this.txActividad = txActividad;
+	}
+
+	public java.lang.String getTxAbreviado() {
+		return this.txAbreviado;
+	}
+
+	public void setTxAbreviado(java.lang.String txAbreviado) {
+		this.txAbreviado = txAbreviado;
+	}
+
+	public TMapActividadDO(java.lang.Long nuIdActividad,
+			java.lang.String txCodTipoSuperv, java.lang.String txActividad,
+			java.lang.String txAbreviado) {
+		this.nuIdActividad = nuIdActividad;
+		this.txCodTipoSuperv = txCodTipoSuperv;
+		this.txActividad = txActividad;
+		this.txAbreviado = txAbreviado;
+	}
 
 }
