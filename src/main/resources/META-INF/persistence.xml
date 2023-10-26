@@ -3,6 +3,7 @@
     <persistence-unit name="com.oefaspace:Supervision_linea:1.0.0-SNAPSHOT" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/ExampleDS</jta-data-source>
+        <class>com.oefaspace.supervision_linea.T_MAP_MONITOREO</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
