@@ -11,6 +11,7 @@
         <class>com.oefaspace.supervision_linea.TMapFuenteSup</class>
         <class>com.oefaspace.supervision_linea.TMapEstadosDO</class>
         <class>com.oefaspace.supervision_linea.TMapProcesosDO</class>
+        <class>com.oefaspace.supervision_linea.T_Mvc_Actsup</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
