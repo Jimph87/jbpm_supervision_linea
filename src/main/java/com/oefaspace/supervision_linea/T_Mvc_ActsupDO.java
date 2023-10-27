@@ -5,7 +5,7 @@ package com.oefaspace.supervision_linea;
  */
 
 @javax.persistence.Entity
-public class T_Mvc_ActsupDO implements java.io.Serializable {
+public class TMvcActsupDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -36,7 +36,7 @@ public class T_Mvc_ActsupDO implements java.io.Serializable {
 
 	private java.lang.String tx_Usuario;
 
-	public T_Mvc_ActsupDO() {
+	public TMvcActsupDO() {
 	}
 
 	public java.lang.Long getNu_Id_Activsup() {
@@ -135,7 +135,7 @@ public class T_Mvc_ActsupDO implements java.io.Serializable {
 		this.tx_Usuario = tx_Usuario;
 	}
 
-	public T_Mvc_ActsupDO(java.lang.Long nu_Id_Activsup,
+	public TMvcActsupDO(java.lang.Long nu_Id_Activsup,
 			java.lang.String tx_Tiposuperv, java.lang.String tx_Codaccion,
 			java.lang.String tx_Expediente, java.lang.String tx_Accion,
 			java.util.Date fe_Fecinicio, java.time.LocalTime fe_Horaini,
