@@ -7,29 +7,49 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMapFuenteSup implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPFUENTESUP_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMAPFUENTESUP_ID_GENERATOR", sequenceName = "TMAPFUENTESUP_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPFUENTESUP_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMAPFUENTESUP_ID_GENERATOR", sequenceName = "TMAPFUENTESUP_ID_SEQ")
+	private java.lang.Long nu_Id_Fuente;
 
-    public TMapFuenteSup() {
-    }
-    
-    public TMapFuenteSup(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codfuente;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Fuente;
 
+	public TMapFuenteSup() {
+	}
 
+	public java.lang.Long getNu_Id_Fuente() {
+		return this.nu_Id_Fuente;
+	}
 
+	public void setNu_Id_Fuente(java.lang.Long nu_Id_Fuente) {
+		this.nu_Id_Fuente = nu_Id_Fuente;
+	}
+
+	public java.lang.String getTx_Codfuente() {
+		return this.tx_Codfuente;
+	}
+
+	public void setTx_Codfuente(java.lang.String tx_Codfuente) {
+		this.tx_Codfuente = tx_Codfuente;
+	}
+
+	public java.lang.String getTx_Fuente() {
+		return this.tx_Fuente;
+	}
+
+	public void setTx_Fuente(java.lang.String tx_Fuente) {
+		this.tx_Fuente = tx_Fuente;
+	}
+
+	public TMapFuenteSup(java.lang.Long nu_Id_Fuente,
+			java.lang.String tx_Codfuente, java.lang.String tx_Fuente) {
+		this.nu_Id_Fuente = nu_Id_Fuente;
+		this.tx_Codfuente = tx_Codfuente;
+		this.tx_Fuente = tx_Fuente;
+	}
 
 }
