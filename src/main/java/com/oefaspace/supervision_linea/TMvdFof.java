@@ -5,7 +5,7 @@ package com.oefaspace.supervision_linea;
  */
 
 @javax.persistence.Entity
-public class TMvdFof implements java.io.Serializable {
+public class TMvdFofDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -82,7 +82,7 @@ public class TMvdFof implements java.io.Serializable {
 
 	private java.lang.String tx_Estado_Fof;
 
-	public TMvdFof() {
+	public TMvdFofDO() {
 	}
 
 	public java.lang.Long getNu_Id_Fof() {
@@ -365,7 +365,8 @@ public class TMvdFof implements java.io.Serializable {
 		this.tx_Estado_Fof = tx_Estado_Fof;
 	}
 
-	public TMvdFof(java.lang.Long nu_Id_Fof, java.lang.String tx_Codsubsector,
+	public TMvdFofDO(java.lang.Long nu_Id_Fof,
+			java.lang.String tx_Codsubsector,
 			java.lang.Integer nu_Idfacriesgos,
 			java.lang.String tx_Factor_Riesgo,
 			java.lang.String tx_Criterio_Riesgo,
