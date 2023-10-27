@@ -7,29 +7,420 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMvdFof implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVDFOF_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMVDFOF_ID_GENERATOR", sequenceName = "TMVDFOF_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVDFOF_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMVDFOF_ID_GENERATOR", sequenceName = "TMVDFOF_ID_SEQ")
+	private java.lang.Long nu_Id_Fof;
 
-    public TMvdFof() {
-    }
-    
-    public TMvdFof(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codsubsector;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Integer nu_Idfacriesgos;
 
+	private java.lang.String tx_Factor_Riesgo;
 
+	private java.lang.String tx_Criterio_Riesgo;
 
+	private java.lang.String cl_Descpresincump;
+
+	private java.lang.String tx_Gravedadincump;
+
+	private java.lang.String tx_Subsanado;
+
+	private java.lang.String cl_Medprobatorios;
+
+	private java.lang.String tx_Codiga;
+
+	private java.lang.Integer nu_Codtipoiga;
+
+	private java.lang.String tx_Tipoiga;
+
+	private java.lang.String cl_Iga;
+
+	private java.lang.String cl_Desc_Iga;
+
+	private java.lang.String tx_Docadmin_Iga;
+
+	private java.lang.String tx_Administ_Iga;
+
+	private java.lang.String tx_Coduf_Iga;
+
+	private java.lang.String tx_Unidfisc_Iga;
+
+	private java.lang.String tx_Direc_Uf;
+
+	private java.lang.String tx_Estado_Iga;
+
+	private java.lang.String tx_Nivel_Iga;
+
+	private java.util.Date fe_Fecestado_Iga;
+
+	private char tx_Fg_Tieneplmon_Iga;
+
+	private java.util.Date fe_Aprob_Iga;
+
+	private java.lang.String tx_Docaprob_Iga;
+
+	private java.lang.String tx_Docsustento_Iga;
+
+	private java.lang.String tx_Otras_Of;
+
+	private java.lang.String tx_Considerar_Of;
+
+	private java.util.Date fe_Fecvigente_Iga;
+
+	private java.util.Date fe_Fecregistro;
+
+	private java.util.Date fe_Fecmodifica;
+
+	private char tx_Fgcumple;
+
+	private java.lang.String cl_Conclusiones;
+
+	private java.lang.String tx_Usuario;
+
+	private java.lang.String tx_Estado_Fof;
+
+	public TMvdFof() {
+	}
+
+	public java.lang.Long getNu_Id_Fof() {
+		return this.nu_Id_Fof;
+	}
+
+	public void setNu_Id_Fof(java.lang.Long nu_Id_Fof) {
+		this.nu_Id_Fof = nu_Id_Fof;
+	}
+
+	public java.lang.String getTx_Codsubsector() {
+		return this.tx_Codsubsector;
+	}
+
+	public void setTx_Codsubsector(java.lang.String tx_Codsubsector) {
+		this.tx_Codsubsector = tx_Codsubsector;
+	}
+
+	public java.lang.Integer getNu_Idfacriesgos() {
+		return this.nu_Idfacriesgos;
+	}
+
+	public void setNu_Idfacriesgos(java.lang.Integer nu_Idfacriesgos) {
+		this.nu_Idfacriesgos = nu_Idfacriesgos;
+	}
+
+	public java.lang.String getTx_Factor_Riesgo() {
+		return this.tx_Factor_Riesgo;
+	}
+
+	public void setTx_Factor_Riesgo(java.lang.String tx_Factor_Riesgo) {
+		this.tx_Factor_Riesgo = tx_Factor_Riesgo;
+	}
+
+	public java.lang.String getTx_Criterio_Riesgo() {
+		return this.tx_Criterio_Riesgo;
+	}
+
+	public void setTx_Criterio_Riesgo(java.lang.String tx_Criterio_Riesgo) {
+		this.tx_Criterio_Riesgo = tx_Criterio_Riesgo;
+	}
+
+	public java.lang.String getCl_Descpresincump() {
+		return this.cl_Descpresincump;
+	}
+
+	public void setCl_Descpresincump(java.lang.String cl_Descpresincump) {
+		this.cl_Descpresincump = cl_Descpresincump;
+	}
+
+	public java.lang.String getTx_Gravedadincump() {
+		return this.tx_Gravedadincump;
+	}
+
+	public void setTx_Gravedadincump(java.lang.String tx_Gravedadincump) {
+		this.tx_Gravedadincump = tx_Gravedadincump;
+	}
+
+	public java.lang.String getTx_Subsanado() {
+		return this.tx_Subsanado;
+	}
+
+	public void setTx_Subsanado(java.lang.String tx_Subsanado) {
+		this.tx_Subsanado = tx_Subsanado;
+	}
+
+	public java.lang.String getCl_Medprobatorios() {
+		return this.cl_Medprobatorios;
+	}
+
+	public void setCl_Medprobatorios(java.lang.String cl_Medprobatorios) {
+		this.cl_Medprobatorios = cl_Medprobatorios;
+	}
+
+	public java.lang.String getTx_Codiga() {
+		return this.tx_Codiga;
+	}
+
+	public void setTx_Codiga(java.lang.String tx_Codiga) {
+		this.tx_Codiga = tx_Codiga;
+	}
+
+	public java.lang.Integer getNu_Codtipoiga() {
+		return this.nu_Codtipoiga;
+	}
+
+	public void setNu_Codtipoiga(java.lang.Integer nu_Codtipoiga) {
+		this.nu_Codtipoiga = nu_Codtipoiga;
+	}
+
+	public java.lang.String getTx_Tipoiga() {
+		return this.tx_Tipoiga;
+	}
+
+	public void setTx_Tipoiga(java.lang.String tx_Tipoiga) {
+		this.tx_Tipoiga = tx_Tipoiga;
+	}
+
+	public java.lang.String getCl_Iga() {
+		return this.cl_Iga;
+	}
+
+	public void setCl_Iga(java.lang.String cl_Iga) {
+		this.cl_Iga = cl_Iga;
+	}
+
+	public java.lang.String getCl_Desc_Iga() {
+		return this.cl_Desc_Iga;
+	}
+
+	public void setCl_Desc_Iga(java.lang.String cl_Desc_Iga) {
+		this.cl_Desc_Iga = cl_Desc_Iga;
+	}
+
+	public java.lang.String getTx_Docadmin_Iga() {
+		return this.tx_Docadmin_Iga;
+	}
+
+	public void setTx_Docadmin_Iga(java.lang.String tx_Docadmin_Iga) {
+		this.tx_Docadmin_Iga = tx_Docadmin_Iga;
+	}
+
+	public java.lang.String getTx_Administ_Iga() {
+		return this.tx_Administ_Iga;
+	}
+
+	public void setTx_Administ_Iga(java.lang.String tx_Administ_Iga) {
+		this.tx_Administ_Iga = tx_Administ_Iga;
+	}
+
+	public java.lang.String getTx_Coduf_Iga() {
+		return this.tx_Coduf_Iga;
+	}
+
+	public void setTx_Coduf_Iga(java.lang.String tx_Coduf_Iga) {
+		this.tx_Coduf_Iga = tx_Coduf_Iga;
+	}
+
+	public java.lang.String getTx_Unidfisc_Iga() {
+		return this.tx_Unidfisc_Iga;
+	}
+
+	public void setTx_Unidfisc_Iga(java.lang.String tx_Unidfisc_Iga) {
+		this.tx_Unidfisc_Iga = tx_Unidfisc_Iga;
+	}
+
+	public java.lang.String getTx_Direc_Uf() {
+		return this.tx_Direc_Uf;
+	}
+
+	public void setTx_Direc_Uf(java.lang.String tx_Direc_Uf) {
+		this.tx_Direc_Uf = tx_Direc_Uf;
+	}
+
+	public java.lang.String getTx_Estado_Iga() {
+		return this.tx_Estado_Iga;
+	}
+
+	public void setTx_Estado_Iga(java.lang.String tx_Estado_Iga) {
+		this.tx_Estado_Iga = tx_Estado_Iga;
+	}
+
+	public java.lang.String getTx_Nivel_Iga() {
+		return this.tx_Nivel_Iga;
+	}
+
+	public void setTx_Nivel_Iga(java.lang.String tx_Nivel_Iga) {
+		this.tx_Nivel_Iga = tx_Nivel_Iga;
+	}
+
+	public java.util.Date getFe_Fecestado_Iga() {
+		return this.fe_Fecestado_Iga;
+	}
+
+	public void setFe_Fecestado_Iga(java.util.Date fe_Fecestado_Iga) {
+		this.fe_Fecestado_Iga = fe_Fecestado_Iga;
+	}
+
+	public char getTx_Fg_Tieneplmon_Iga() {
+		return this.tx_Fg_Tieneplmon_Iga;
+	}
+
+	public void setTx_Fg_Tieneplmon_Iga(char tx_Fg_Tieneplmon_Iga) {
+		this.tx_Fg_Tieneplmon_Iga = tx_Fg_Tieneplmon_Iga;
+	}
+
+	public java.util.Date getFe_Aprob_Iga() {
+		return this.fe_Aprob_Iga;
+	}
+
+	public void setFe_Aprob_Iga(java.util.Date fe_Aprob_Iga) {
+		this.fe_Aprob_Iga = fe_Aprob_Iga;
+	}
+
+	public java.lang.String getTx_Docaprob_Iga() {
+		return this.tx_Docaprob_Iga;
+	}
+
+	public void setTx_Docaprob_Iga(java.lang.String tx_Docaprob_Iga) {
+		this.tx_Docaprob_Iga = tx_Docaprob_Iga;
+	}
+
+	public java.lang.String getTx_Docsustento_Iga() {
+		return this.tx_Docsustento_Iga;
+	}
+
+	public void setTx_Docsustento_Iga(java.lang.String tx_Docsustento_Iga) {
+		this.tx_Docsustento_Iga = tx_Docsustento_Iga;
+	}
+
+	public java.lang.String getTx_Otras_Of() {
+		return this.tx_Otras_Of;
+	}
+
+	public void setTx_Otras_Of(java.lang.String tx_Otras_Of) {
+		this.tx_Otras_Of = tx_Otras_Of;
+	}
+
+	public java.lang.String getTx_Considerar_Of() {
+		return this.tx_Considerar_Of;
+	}
+
+	public void setTx_Considerar_Of(java.lang.String tx_Considerar_Of) {
+		this.tx_Considerar_Of = tx_Considerar_Of;
+	}
+
+	public java.util.Date getFe_Fecvigente_Iga() {
+		return this.fe_Fecvigente_Iga;
+	}
+
+	public void setFe_Fecvigente_Iga(java.util.Date fe_Fecvigente_Iga) {
+		this.fe_Fecvigente_Iga = fe_Fecvigente_Iga;
+	}
+
+	public java.util.Date getFe_Fecregistro() {
+		return this.fe_Fecregistro;
+	}
+
+	public void setFe_Fecregistro(java.util.Date fe_Fecregistro) {
+		this.fe_Fecregistro = fe_Fecregistro;
+	}
+
+	public java.util.Date getFe_Fecmodifica() {
+		return this.fe_Fecmodifica;
+	}
+
+	public void setFe_Fecmodifica(java.util.Date fe_Fecmodifica) {
+		this.fe_Fecmodifica = fe_Fecmodifica;
+	}
+
+	public char getTx_Fgcumple() {
+		return this.tx_Fgcumple;
+	}
+
+	public void setTx_Fgcumple(char tx_Fgcumple) {
+		this.tx_Fgcumple = tx_Fgcumple;
+	}
+
+	public java.lang.String getCl_Conclusiones() {
+		return this.cl_Conclusiones;
+	}
+
+	public void setCl_Conclusiones(java.lang.String cl_Conclusiones) {
+		this.cl_Conclusiones = cl_Conclusiones;
+	}
+
+	public java.lang.String getTx_Usuario() {
+		return this.tx_Usuario;
+	}
+
+	public void setTx_Usuario(java.lang.String tx_Usuario) {
+		this.tx_Usuario = tx_Usuario;
+	}
+
+	public java.lang.String getTx_Estado_Fof() {
+		return this.tx_Estado_Fof;
+	}
+
+	public void setTx_Estado_Fof(java.lang.String tx_Estado_Fof) {
+		this.tx_Estado_Fof = tx_Estado_Fof;
+	}
+
+	public TMvdFof(java.lang.Long nu_Id_Fof, java.lang.String tx_Codsubsector,
+			java.lang.Integer nu_Idfacriesgos,
+			java.lang.String tx_Factor_Riesgo,
+			java.lang.String tx_Criterio_Riesgo,
+			java.lang.String cl_Descpresincump,
+			java.lang.String tx_Gravedadincump, java.lang.String tx_Subsanado,
+			java.lang.String cl_Medprobatorios, java.lang.String tx_Codiga,
+			java.lang.Integer nu_Codtipoiga, java.lang.String tx_Tipoiga,
+			java.lang.String cl_Iga, java.lang.String cl_Desc_Iga,
+			java.lang.String tx_Docadmin_Iga, java.lang.String tx_Administ_Iga,
+			java.lang.String tx_Coduf_Iga, java.lang.String tx_Unidfisc_Iga,
+			java.lang.String tx_Direc_Uf, java.lang.String tx_Estado_Iga,
+			java.lang.String tx_Nivel_Iga, java.util.Date fe_Fecestado_Iga,
+			char tx_Fg_Tieneplmon_Iga, java.util.Date fe_Aprob_Iga,
+			java.lang.String tx_Docaprob_Iga,
+			java.lang.String tx_Docsustento_Iga, java.lang.String tx_Otras_Of,
+			java.lang.String tx_Considerar_Of,
+			java.util.Date fe_Fecvigente_Iga, java.util.Date fe_Fecregistro,
+			java.util.Date fe_Fecmodifica, char tx_Fgcumple,
+			java.lang.String cl_Conclusiones, java.lang.String tx_Usuario,
+			java.lang.String tx_Estado_Fof) {
+		this.nu_Id_Fof = nu_Id_Fof;
+		this.tx_Codsubsector = tx_Codsubsector;
+		this.nu_Idfacriesgos = nu_Idfacriesgos;
+		this.tx_Factor_Riesgo = tx_Factor_Riesgo;
+		this.tx_Criterio_Riesgo = tx_Criterio_Riesgo;
+		this.cl_Descpresincump = cl_Descpresincump;
+		this.tx_Gravedadincump = tx_Gravedadincump;
+		this.tx_Subsanado = tx_Subsanado;
+		this.cl_Medprobatorios = cl_Medprobatorios;
+		this.tx_Codiga = tx_Codiga;
+		this.nu_Codtipoiga = nu_Codtipoiga;
+		this.tx_Tipoiga = tx_Tipoiga;
+		this.cl_Iga = cl_Iga;
+		this.cl_Desc_Iga = cl_Desc_Iga;
+		this.tx_Docadmin_Iga = tx_Docadmin_Iga;
+		this.tx_Administ_Iga = tx_Administ_Iga;
+		this.tx_Coduf_Iga = tx_Coduf_Iga;
+		this.tx_Unidfisc_Iga = tx_Unidfisc_Iga;
+		this.tx_Direc_Uf = tx_Direc_Uf;
+		this.tx_Estado_Iga = tx_Estado_Iga;
+		this.tx_Nivel_Iga = tx_Nivel_Iga;
+		this.fe_Fecestado_Iga = fe_Fecestado_Iga;
+		this.tx_Fg_Tieneplmon_Iga = tx_Fg_Tieneplmon_Iga;
+		this.fe_Aprob_Iga = fe_Aprob_Iga;
+		this.tx_Docaprob_Iga = tx_Docaprob_Iga;
+		this.tx_Docsustento_Iga = tx_Docsustento_Iga;
+		this.tx_Otras_Of = tx_Otras_Of;
+		this.tx_Considerar_Of = tx_Considerar_Of;
+		this.fe_Fecvigente_Iga = fe_Fecvigente_Iga;
+		this.fe_Fecregistro = fe_Fecregistro;
+		this.fe_Fecmodifica = fe_Fecmodifica;
+		this.tx_Fgcumple = tx_Fgcumple;
+		this.cl_Conclusiones = cl_Conclusiones;
+		this.tx_Usuario = tx_Usuario;
+		this.tx_Estado_Fof = tx_Estado_Fof;
+	}
 
 }
