@@ -15,6 +15,7 @@
         <class>com.oefaspace.supervision_linea.TMvdFof</class>
         <class>com.oefaspace.supervision_linea.TMvcDocumSup</class>
         <class>com.oefaspace.supervision_linea.TMvdDocumSupDO</class>
+        <class>com.oefaspace.supervision_linea.TMvdDocumPerDO</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
