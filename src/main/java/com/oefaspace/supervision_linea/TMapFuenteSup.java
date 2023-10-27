@@ -5,7 +5,7 @@ package com.oefaspace.supervision_linea;
  */
 
 @javax.persistence.Entity
-public class TMapFuenteSup implements java.io.Serializable {
+public class TMapFuenteSupDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -18,7 +18,7 @@ public class TMapFuenteSup implements java.io.Serializable {
 
 	private java.lang.String tx_Fuente;
 
-	public TMapFuenteSup() {
+	public TMapFuenteSupDO() {
 	}
 
 	public java.lang.Long getNu_Id_Fuente() {
@@ -45,7 +45,7 @@ public class TMapFuenteSup implements java.io.Serializable {
 		this.tx_Fuente = tx_Fuente;
 	}
 
-	public TMapFuenteSup(java.lang.Long nu_Id_Fuente,
+	public TMapFuenteSupDO(java.lang.Long nu_Id_Fuente,
 			java.lang.String tx_Codfuente, java.lang.String tx_Fuente) {
 		this.nu_Id_Fuente = nu_Id_Fuente;
 		this.tx_Codfuente = tx_Codfuente;
