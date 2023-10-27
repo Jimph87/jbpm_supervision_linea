@@ -7,29 +7,141 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMapProcesosDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPPROCESOSDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMAPPROCESOSDO_ID_GENERATOR", sequenceName = "TMAPPROCESOSDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPPROCESOSDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMAPPROCESOSDO_ID_GENERATOR", sequenceName = "TMAPPROCESOSDO_ID_SEQ")
+	private java.lang.Long nu_Id_Procesos;
 
-    public TMapProcesosDO() {
-    }
-    
-    public TMapProcesosDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codproceso;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Procesos;
 
+	private java.lang.String tx_Estado_Sup;
 
+	private java.lang.String tx_Estado_Oapoi;
 
+	private char tx_Fg_Sup_Efa;
+
+	private char tx_Fg_Sup_Reg;
+
+	private char tx_Fg_Sup_Esp;
+
+	private char tx_Fg_Sup_Insitu;
+
+	private char tx_Fg_Sup_Gabinete;
+
+	private java.lang.String tx_Idhistuser;
+
+	public TMapProcesosDO() {
+	}
+
+	public java.lang.Long getNu_Id_Procesos() {
+		return this.nu_Id_Procesos;
+	}
+
+	public void setNu_Id_Procesos(java.lang.Long nu_Id_Procesos) {
+		this.nu_Id_Procesos = nu_Id_Procesos;
+	}
+
+	public java.lang.String getTx_Codproceso() {
+		return this.tx_Codproceso;
+	}
+
+	public void setTx_Codproceso(java.lang.String tx_Codproceso) {
+		this.tx_Codproceso = tx_Codproceso;
+	}
+
+	public java.lang.String getTx_Procesos() {
+		return this.tx_Procesos;
+	}
+
+	public void setTx_Procesos(java.lang.String tx_Procesos) {
+		this.tx_Procesos = tx_Procesos;
+	}
+
+	public java.lang.String getTx_Estado_Sup() {
+		return this.tx_Estado_Sup;
+	}
+
+	public void setTx_Estado_Sup(java.lang.String tx_Estado_Sup) {
+		this.tx_Estado_Sup = tx_Estado_Sup;
+	}
+
+	public java.lang.String getTx_Estado_Oapoi() {
+		return this.tx_Estado_Oapoi;
+	}
+
+	public void setTx_Estado_Oapoi(java.lang.String tx_Estado_Oapoi) {
+		this.tx_Estado_Oapoi = tx_Estado_Oapoi;
+	}
+
+	public char getTx_Fg_Sup_Efa() {
+		return this.tx_Fg_Sup_Efa;
+	}
+
+	public void setTx_Fg_Sup_Efa(char tx_Fg_Sup_Efa) {
+		this.tx_Fg_Sup_Efa = tx_Fg_Sup_Efa;
+	}
+
+	public char getTx_Fg_Sup_Reg() {
+		return this.tx_Fg_Sup_Reg;
+	}
+
+	public void setTx_Fg_Sup_Reg(char tx_Fg_Sup_Reg) {
+		this.tx_Fg_Sup_Reg = tx_Fg_Sup_Reg;
+	}
+
+	public char getTx_Fg_Sup_Esp() {
+		return this.tx_Fg_Sup_Esp;
+	}
+
+	public void setTx_Fg_Sup_Esp(char tx_Fg_Sup_Esp) {
+		this.tx_Fg_Sup_Esp = tx_Fg_Sup_Esp;
+	}
+
+	public char getTx_Fg_Sup_Insitu() {
+		return this.tx_Fg_Sup_Insitu;
+	}
+
+	public void setTx_Fg_Sup_Insitu(char tx_Fg_Sup_Insitu) {
+		this.tx_Fg_Sup_Insitu = tx_Fg_Sup_Insitu;
+	}
+
+	public char getTx_Fg_Sup_Gabinete() {
+		return this.tx_Fg_Sup_Gabinete;
+	}
+
+	public void setTx_Fg_Sup_Gabinete(char tx_Fg_Sup_Gabinete) {
+		this.tx_Fg_Sup_Gabinete = tx_Fg_Sup_Gabinete;
+	}
+
+	public java.lang.String getTx_Idhistuser() {
+		return this.tx_Idhistuser;
+	}
+
+	public void setTx_Idhistuser(java.lang.String tx_Idhistuser) {
+		this.tx_Idhistuser = tx_Idhistuser;
+	}
+
+	public TMapProcesosDO(java.lang.Long nu_Id_Procesos,
+			java.lang.String tx_Codproceso, java.lang.String tx_Procesos,
+			java.lang.String tx_Estado_Sup, java.lang.String tx_Estado_Oapoi,
+			char tx_Fg_Sup_Efa, char tx_Fg_Sup_Reg, char tx_Fg_Sup_Esp,
+			char tx_Fg_Sup_Insitu, char tx_Fg_Sup_Gabinete,
+			java.lang.String tx_Idhistuser) {
+		this.nu_Id_Procesos = nu_Id_Procesos;
+		this.tx_Codproceso = tx_Codproceso;
+		this.tx_Procesos = tx_Procesos;
+		this.tx_Estado_Sup = tx_Estado_Sup;
+		this.tx_Estado_Oapoi = tx_Estado_Oapoi;
+		this.tx_Fg_Sup_Efa = tx_Fg_Sup_Efa;
+		this.tx_Fg_Sup_Reg = tx_Fg_Sup_Reg;
+		this.tx_Fg_Sup_Esp = tx_Fg_Sup_Esp;
+		this.tx_Fg_Sup_Insitu = tx_Fg_Sup_Insitu;
+		this.tx_Fg_Sup_Gabinete = tx_Fg_Sup_Gabinete;
+		this.tx_Idhistuser = tx_Idhistuser;
+	}
 
 }
