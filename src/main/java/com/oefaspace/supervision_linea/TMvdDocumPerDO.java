@@ -7,29 +7,119 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMvdDocumPerDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVDDOCUMPERDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMVDDOCUMPERDO_ID_GENERATOR", sequenceName = "TMVDDOCUMPERDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVDDOCUMPERDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMVDDOCUMPERDO_ID_GENERATOR", sequenceName = "TMVDDOCUMPERDO_ID_SEQ")
+	private java.lang.Long nu_Id_Docum_Per;
 
-    public TMvdDocumPerDO() {
-    }
-    
-    public TMvdDocumPerDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Integer nu_Documcab_Sup;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Tipopersonal;
 
+	private java.lang.String tx_Docident_Per;
 
+	private java.lang.String tx_Cargo;
 
+	private java.lang.String tx_Apellnom;
+
+	private java.lang.String tx_Nrocoleg;
+
+	private char tx_Fgfirma_Dig;
+
+	private char tx_Fgintcomis;
+
+	public TMvdDocumPerDO() {
+	}
+
+	public java.lang.Long getNu_Id_Docum_Per() {
+		return this.nu_Id_Docum_Per;
+	}
+
+	public void setNu_Id_Docum_Per(java.lang.Long nu_Id_Docum_Per) {
+		this.nu_Id_Docum_Per = nu_Id_Docum_Per;
+	}
+
+	public java.lang.Integer getNu_Documcab_Sup() {
+		return this.nu_Documcab_Sup;
+	}
+
+	public void setNu_Documcab_Sup(java.lang.Integer nu_Documcab_Sup) {
+		this.nu_Documcab_Sup = nu_Documcab_Sup;
+	}
+
+	public java.lang.String getTx_Tipopersonal() {
+		return this.tx_Tipopersonal;
+	}
+
+	public void setTx_Tipopersonal(java.lang.String tx_Tipopersonal) {
+		this.tx_Tipopersonal = tx_Tipopersonal;
+	}
+
+	public java.lang.String getTx_Docident_Per() {
+		return this.tx_Docident_Per;
+	}
+
+	public void setTx_Docident_Per(java.lang.String tx_Docident_Per) {
+		this.tx_Docident_Per = tx_Docident_Per;
+	}
+
+	public java.lang.String getTx_Cargo() {
+		return this.tx_Cargo;
+	}
+
+	public void setTx_Cargo(java.lang.String tx_Cargo) {
+		this.tx_Cargo = tx_Cargo;
+	}
+
+	public java.lang.String getTx_Apellnom() {
+		return this.tx_Apellnom;
+	}
+
+	public void setTx_Apellnom(java.lang.String tx_Apellnom) {
+		this.tx_Apellnom = tx_Apellnom;
+	}
+
+	public java.lang.String getTx_Nrocoleg() {
+		return this.tx_Nrocoleg;
+	}
+
+	public void setTx_Nrocoleg(java.lang.String tx_Nrocoleg) {
+		this.tx_Nrocoleg = tx_Nrocoleg;
+	}
+
+	public char getTx_Fgfirma_Dig() {
+		return this.tx_Fgfirma_Dig;
+	}
+
+	public void setTx_Fgfirma_Dig(char tx_Fgfirma_Dig) {
+		this.tx_Fgfirma_Dig = tx_Fgfirma_Dig;
+	}
+
+	public char getTx_Fgintcomis() {
+		return this.tx_Fgintcomis;
+	}
+
+	public void setTx_Fgintcomis(char tx_Fgintcomis) {
+		this.tx_Fgintcomis = tx_Fgintcomis;
+	}
+
+	public TMvdDocumPerDO(java.lang.Long nu_Id_Docum_Per,
+			java.lang.Integer nu_Documcab_Sup,
+			java.lang.String tx_Tipopersonal, java.lang.String tx_Docident_Per,
+			java.lang.String tx_Cargo, java.lang.String tx_Apellnom,
+			java.lang.String tx_Nrocoleg, char tx_Fgfirma_Dig,
+			char tx_Fgintcomis) {
+		this.nu_Id_Docum_Per = nu_Id_Docum_Per;
+		this.nu_Documcab_Sup = nu_Documcab_Sup;
+		this.tx_Tipopersonal = tx_Tipopersonal;
+		this.tx_Docident_Per = tx_Docident_Per;
+		this.tx_Cargo = tx_Cargo;
+		this.tx_Apellnom = tx_Apellnom;
+		this.tx_Nrocoleg = tx_Nrocoleg;
+		this.tx_Fgfirma_Dig = tx_Fgfirma_Dig;
+		this.tx_Fgintcomis = tx_Fgintcomis;
+	}
 
 }
