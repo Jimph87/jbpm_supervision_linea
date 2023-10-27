@@ -12,21 +12,148 @@ public class T_Mvc_ActsupDO implements java.io.Serializable {
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "T_MVC_ACTSUP_ID_GENERATOR")
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(name = "T_MVC_ACTSUP_ID_GENERATOR", sequenceName = "T_MVC_ACTSUP_ID_SEQ")
-	private java.lang.Long id;
+	private java.lang.Long nu_Id_Activsup;
+
+	private java.lang.String tx_Tiposuperv;
+
+	private java.lang.String tx_Codaccion;
+
+	private java.lang.String tx_Expediente;
+
+	private java.lang.String tx_Accion;
+
+	private java.util.Date fe_Fecinicio;
+
+	private java.time.LocalTime fe_Horaini;
+
+	private java.util.Date fe_Fecfinal;
+
+	private java.time.LocalTime fe_Horafin;
+
+	private java.lang.String tx_Estado_Reg;
+
+	private java.lang.String tx_Estado_Mod;
+
+	private java.lang.String tx_Usuario;
 
 	public T_Mvc_ActsupDO() {
 	}
 
-	public java.lang.Long getId() {
-		return this.id;
+	public java.lang.Long getNu_Id_Activsup() {
+		return this.nu_Id_Activsup;
 	}
 
-	public void setId(java.lang.Long id) {
-		this.id = id;
+	public void setNu_Id_Activsup(java.lang.Long nu_Id_Activsup) {
+		this.nu_Id_Activsup = nu_Id_Activsup;
 	}
 
-	public T_Mvc_ActsupDO(java.lang.Long id) {
-		this.id = id;
+	public java.lang.String getTx_Tiposuperv() {
+		return this.tx_Tiposuperv;
+	}
+
+	public void setTx_Tiposuperv(java.lang.String tx_Tiposuperv) {
+		this.tx_Tiposuperv = tx_Tiposuperv;
+	}
+
+	public java.lang.String getTx_Codaccion() {
+		return this.tx_Codaccion;
+	}
+
+	public void setTx_Codaccion(java.lang.String tx_Codaccion) {
+		this.tx_Codaccion = tx_Codaccion;
+	}
+
+	public java.lang.String getTx_Expediente() {
+		return this.tx_Expediente;
+	}
+
+	public void setTx_Expediente(java.lang.String tx_Expediente) {
+		this.tx_Expediente = tx_Expediente;
+	}
+
+	public java.lang.String getTx_Accion() {
+		return this.tx_Accion;
+	}
+
+	public void setTx_Accion(java.lang.String tx_Accion) {
+		this.tx_Accion = tx_Accion;
+	}
+
+	public java.util.Date getFe_Fecinicio() {
+		return this.fe_Fecinicio;
+	}
+
+	public void setFe_Fecinicio(java.util.Date fe_Fecinicio) {
+		this.fe_Fecinicio = fe_Fecinicio;
+	}
+
+	public java.time.LocalTime getFe_Horaini() {
+		return this.fe_Horaini;
+	}
+
+	public void setFe_Horaini(java.time.LocalTime fe_Horaini) {
+		this.fe_Horaini = fe_Horaini;
+	}
+
+	public java.util.Date getFe_Fecfinal() {
+		return this.fe_Fecfinal;
+	}
+
+	public void setFe_Fecfinal(java.util.Date fe_Fecfinal) {
+		this.fe_Fecfinal = fe_Fecfinal;
+	}
+
+	public java.time.LocalTime getFe_Horafin() {
+		return this.fe_Horafin;
+	}
+
+	public void setFe_Horafin(java.time.LocalTime fe_Horafin) {
+		this.fe_Horafin = fe_Horafin;
+	}
+
+	public java.lang.String getTx_Estado_Reg() {
+		return this.tx_Estado_Reg;
+	}
+
+	public void setTx_Estado_Reg(java.lang.String tx_Estado_Reg) {
+		this.tx_Estado_Reg = tx_Estado_Reg;
+	}
+
+	public java.lang.String getTx_Estado_Mod() {
+		return this.tx_Estado_Mod;
+	}
+
+	public void setTx_Estado_Mod(java.lang.String tx_Estado_Mod) {
+		this.tx_Estado_Mod = tx_Estado_Mod;
+	}
+
+	public java.lang.String getTx_Usuario() {
+		return this.tx_Usuario;
+	}
+
+	public void setTx_Usuario(java.lang.String tx_Usuario) {
+		this.tx_Usuario = tx_Usuario;
+	}
+
+	public T_Mvc_ActsupDO(java.lang.Long nu_Id_Activsup,
+			java.lang.String tx_Tiposuperv, java.lang.String tx_Codaccion,
+			java.lang.String tx_Expediente, java.lang.String tx_Accion,
+			java.util.Date fe_Fecinicio, java.time.LocalTime fe_Horaini,
+			java.util.Date fe_Fecfinal, java.time.LocalTime fe_Horafin,
+			java.lang.String tx_Estado_Reg, java.lang.String tx_Estado_Mod,
+			java.lang.String tx_Usuario) {
+		this.nu_Id_Activsup = nu_Id_Activsup;
+		this.tx_Tiposuperv = tx_Tiposuperv;
+		this.tx_Codaccion = tx_Codaccion;
+		this.tx_Expediente = tx_Expediente;
+		this.tx_Accion = tx_Accion;
+		this.fe_Fecinicio = fe_Fecinicio;
+		this.fe_Horaini = fe_Horaini;
+		this.fe_Fecfinal = fe_Fecfinal;
+		this.fe_Horafin = fe_Horafin;
+		this.tx_Estado_Reg = tx_Estado_Reg;
+		this.tx_Estado_Mod = tx_Estado_Mod;
+		this.tx_Usuario = tx_Usuario;
 	}
 
 }
