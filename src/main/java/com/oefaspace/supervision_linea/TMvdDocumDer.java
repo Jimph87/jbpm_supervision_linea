@@ -5,7 +5,7 @@ package com.oefaspace.supervision_linea;
  */
 
 @javax.persistence.Entity
-public class TMvdDocumDer implements java.io.Serializable {
+public class TMvdDocumDerDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -26,7 +26,7 @@ public class TMvdDocumDer implements java.io.Serializable {
 	private java.lang.String tx_Tokensiged;
 	private java.lang.String tx_Uuidalfresco;
 
-	public TMvdDocumDer() {
+	public TMvdDocumDerDO() {
 	}
 
 	public java.lang.Long getNu_Id_Docum_Der() {
@@ -133,7 +133,7 @@ public class TMvdDocumDer implements java.io.Serializable {
 		this.tx_Uuidalfresco = tx_Uuidalfresco;
 	}
 
-	public TMvdDocumDer(java.lang.Long nu_Id_Docum_Der,
+	public TMvdDocumDerDO(java.lang.Long nu_Id_Docum_Der,
 			java.lang.String tx_Nomfile, java.lang.String tx_Usuario_Orig,
 			java.lang.String tx_Usuario_Dest, java.util.Date fe_Fecusureg,
 			java.util.Date fe_Fecusuder, java.lang.String cl_Observ,
