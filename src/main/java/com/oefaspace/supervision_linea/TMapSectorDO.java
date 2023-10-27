@@ -7,29 +7,49 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMapSectorDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPSECTORDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMAPSECTORDO_ID_GENERATOR", sequenceName = "TMAPSECTORDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPSECTORDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMAPSECTORDO_ID_GENERATOR", sequenceName = "TMAPSECTORDO_ID_SEQ")
+	private java.lang.Long nu_Id_Sector;
 
-    public TMapSectorDO() {
-    }
-    
-    public TMapSectorDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codsector;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Sector;
 
+	public TMapSectorDO() {
+	}
 
+	public java.lang.Long getNu_Id_Sector() {
+		return this.nu_Id_Sector;
+	}
 
+	public void setNu_Id_Sector(java.lang.Long nu_Id_Sector) {
+		this.nu_Id_Sector = nu_Id_Sector;
+	}
+
+	public java.lang.String getTx_Codsector() {
+		return this.tx_Codsector;
+	}
+
+	public void setTx_Codsector(java.lang.String tx_Codsector) {
+		this.tx_Codsector = tx_Codsector;
+	}
+
+	public java.lang.String getTx_Sector() {
+		return this.tx_Sector;
+	}
+
+	public void setTx_Sector(java.lang.String tx_Sector) {
+		this.tx_Sector = tx_Sector;
+	}
+
+	public TMapSectorDO(java.lang.Long nu_Id_Sector,
+			java.lang.String tx_Codsector, java.lang.String tx_Sector) {
+		this.nu_Id_Sector = nu_Id_Sector;
+		this.tx_Codsector = tx_Codsector;
+		this.tx_Sector = tx_Sector;
+	}
 
 }
