@@ -5,7 +5,7 @@ package com.oefaspace.supervision_linea;
  */
 
 @javax.persistence.Entity
-public class TMvcDocumSup implements java.io.Serializable {
+public class TMvcDocumSupDO implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
@@ -42,7 +42,7 @@ public class TMvcDocumSup implements java.io.Serializable {
 
 	private java.lang.String tx_Estado;
 
-	public TMvcDocumSup() {
+	public TMvcDocumSupDO() {
 	}
 
 	public java.lang.Long getNu_Id_Docum_Sup() {
@@ -165,7 +165,7 @@ public class TMvcDocumSup implements java.io.Serializable {
 		this.tx_Estado = tx_Estado;
 	}
 
-	public TMvcDocumSup(java.lang.Long nu_Id_Docum_Sup,
+	public TMvcDocumSupDO(java.lang.Long nu_Id_Docum_Sup,
 			java.lang.Integer nu_Correlativo_Doc,
 			java.lang.String tx_Codaccion, java.lang.String tx_Expediente,
 			java.lang.String tx_Docadminsup,
