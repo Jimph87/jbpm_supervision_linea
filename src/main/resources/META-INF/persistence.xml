@@ -7,6 +7,7 @@
         <class>com.oefaspace.supervision_linea.TMadEquipoGpsDO</class>
         <class>com.oefaspace.supervision_linea.TMapActividadDO</class>
         <class>com.oefaspace.supervision_linea.TMapSectorDO</class>
+        <class>com.oefaspace.supervision_linea.TMapSubsectorDO</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
