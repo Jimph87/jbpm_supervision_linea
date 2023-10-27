@@ -32,6 +32,54 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 
 	private java.lang.String txCodSinadaSup;
 
+	private char tx_Orientativasup;
+
+	private java.util.Date fe_Fecreunionsup;
+
+	private java.time.LocalTime fe_Horinireunionsup;
+
+	private java.time.LocalTime fe_Horfinreunionsup;
+
+	private java.lang.String tx_Docadminsup;
+
+	private java.lang.String tx_Adminsup;
+
+	private java.lang.String tx_Actfuncadminsup;
+
+	private java.lang.String tx_Etapafuncadminsup;
+
+	private java.lang.String tx_Estadofuncadminsup;
+
+	private java.lang.String tx_Unifis_Adminsup;
+
+	private java.lang.String tx_Direcadmin;
+
+	private java.lang.String tx_Depadminsup;
+
+	private java.lang.String tx_Provadminsup;
+
+	private java.lang.String tx_Distadminsup;
+
+	private java.util.Date fe_Progsup;
+
+	private java.util.Date fe_Iniciosup;
+
+	private java.time.LocalTime fe_Horainisup;
+
+	private java.util.Date fe_Finalsup;
+
+	private java.time.LocalTime fe_Horafinsup;
+
+	private java.lang.String tx_Codcoordinacion;
+
+	private java.lang.String tx_Codsubsector;
+
+	private java.lang.String tx_Usuario;
+
+	private java.lang.String tx_Estados_Orig;
+
+	private java.lang.String tx_Estados_Mod;
+
 	public TMapMonitoreoDO() {
 	}
 
@@ -115,12 +163,220 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 		this.txCodSinadaSup = txCodSinadaSup;
 	}
 
+	public char getTx_Orientativasup() {
+		return this.tx_Orientativasup;
+	}
+
+	public void setTx_Orientativasup(char tx_Orientativasup) {
+		this.tx_Orientativasup = tx_Orientativasup;
+	}
+
+	public java.util.Date getFe_Fecreunionsup() {
+		return this.fe_Fecreunionsup;
+	}
+
+	public void setFe_Fecreunionsup(java.util.Date fe_Fecreunionsup) {
+		this.fe_Fecreunionsup = fe_Fecreunionsup;
+	}
+
+	public java.time.LocalTime getFe_Horinireunionsup() {
+		return this.fe_Horinireunionsup;
+	}
+
+	public void setFe_Horinireunionsup(java.time.LocalTime fe_Horinireunionsup) {
+		this.fe_Horinireunionsup = fe_Horinireunionsup;
+	}
+
+	public java.time.LocalTime getFe_Horfinreunionsup() {
+		return this.fe_Horfinreunionsup;
+	}
+
+	public void setFe_Horfinreunionsup(java.time.LocalTime fe_Horfinreunionsup) {
+		this.fe_Horfinreunionsup = fe_Horfinreunionsup;
+	}
+
+	public java.lang.String getTx_Docadminsup() {
+		return this.tx_Docadminsup;
+	}
+
+	public void setTx_Docadminsup(java.lang.String tx_Docadminsup) {
+		this.tx_Docadminsup = tx_Docadminsup;
+	}
+
+	public java.lang.String getTx_Adminsup() {
+		return this.tx_Adminsup;
+	}
+
+	public void setTx_Adminsup(java.lang.String tx_Adminsup) {
+		this.tx_Adminsup = tx_Adminsup;
+	}
+
+	public java.lang.String getTx_Actfuncadminsup() {
+		return this.tx_Actfuncadminsup;
+	}
+
+	public void setTx_Actfuncadminsup(java.lang.String tx_Actfuncadminsup) {
+		this.tx_Actfuncadminsup = tx_Actfuncadminsup;
+	}
+
+	public java.lang.String getTx_Etapafuncadminsup() {
+		return this.tx_Etapafuncadminsup;
+	}
+
+	public void setTx_Etapafuncadminsup(java.lang.String tx_Etapafuncadminsup) {
+		this.tx_Etapafuncadminsup = tx_Etapafuncadminsup;
+	}
+
+	public java.lang.String getTx_Estadofuncadminsup() {
+		return this.tx_Estadofuncadminsup;
+	}
+
+	public void setTx_Estadofuncadminsup(java.lang.String tx_Estadofuncadminsup) {
+		this.tx_Estadofuncadminsup = tx_Estadofuncadminsup;
+	}
+
+	public java.lang.String getTx_Unifis_Adminsup() {
+		return this.tx_Unifis_Adminsup;
+	}
+
+	public void setTx_Unifis_Adminsup(java.lang.String tx_Unifis_Adminsup) {
+		this.tx_Unifis_Adminsup = tx_Unifis_Adminsup;
+	}
+
+	public java.lang.String getTx_Direcadmin() {
+		return this.tx_Direcadmin;
+	}
+
+	public void setTx_Direcadmin(java.lang.String tx_Direcadmin) {
+		this.tx_Direcadmin = tx_Direcadmin;
+	}
+
+	public java.lang.String getTx_Depadminsup() {
+		return this.tx_Depadminsup;
+	}
+
+	public void setTx_Depadminsup(java.lang.String tx_Depadminsup) {
+		this.tx_Depadminsup = tx_Depadminsup;
+	}
+
+	public java.lang.String getTx_Provadminsup() {
+		return this.tx_Provadminsup;
+	}
+
+	public void setTx_Provadminsup(java.lang.String tx_Provadminsup) {
+		this.tx_Provadminsup = tx_Provadminsup;
+	}
+
+	public java.lang.String getTx_Distadminsup() {
+		return this.tx_Distadminsup;
+	}
+
+	public void setTx_Distadminsup(java.lang.String tx_Distadminsup) {
+		this.tx_Distadminsup = tx_Distadminsup;
+	}
+
+	public java.util.Date getFe_Progsup() {
+		return this.fe_Progsup;
+	}
+
+	public void setFe_Progsup(java.util.Date fe_Progsup) {
+		this.fe_Progsup = fe_Progsup;
+	}
+
+	public java.util.Date getFe_Iniciosup() {
+		return this.fe_Iniciosup;
+	}
+
+	public void setFe_Iniciosup(java.util.Date fe_Iniciosup) {
+		this.fe_Iniciosup = fe_Iniciosup;
+	}
+
+	public java.time.LocalTime getFe_Horainisup() {
+		return this.fe_Horainisup;
+	}
+
+	public void setFe_Horainisup(java.time.LocalTime fe_Horainisup) {
+		this.fe_Horainisup = fe_Horainisup;
+	}
+
+	public java.util.Date getFe_Finalsup() {
+		return this.fe_Finalsup;
+	}
+
+	public void setFe_Finalsup(java.util.Date fe_Finalsup) {
+		this.fe_Finalsup = fe_Finalsup;
+	}
+
+	public java.time.LocalTime getFe_Horafinsup() {
+		return this.fe_Horafinsup;
+	}
+
+	public void setFe_Horafinsup(java.time.LocalTime fe_Horafinsup) {
+		this.fe_Horafinsup = fe_Horafinsup;
+	}
+
+	public java.lang.String getTx_Codcoordinacion() {
+		return this.tx_Codcoordinacion;
+	}
+
+	public void setTx_Codcoordinacion(java.lang.String tx_Codcoordinacion) {
+		this.tx_Codcoordinacion = tx_Codcoordinacion;
+	}
+
+	public java.lang.String getTx_Codsubsector() {
+		return this.tx_Codsubsector;
+	}
+
+	public void setTx_Codsubsector(java.lang.String tx_Codsubsector) {
+		this.tx_Codsubsector = tx_Codsubsector;
+	}
+
+	public java.lang.String getTx_Usuario() {
+		return this.tx_Usuario;
+	}
+
+	public void setTx_Usuario(java.lang.String tx_Usuario) {
+		this.tx_Usuario = tx_Usuario;
+	}
+
+	public java.lang.String getTx_Estados_Orig() {
+		return this.tx_Estados_Orig;
+	}
+
+	public void setTx_Estados_Orig(java.lang.String tx_Estados_Orig) {
+		this.tx_Estados_Orig = tx_Estados_Orig;
+	}
+
+	public java.lang.String getTx_Estados_Mod() {
+		return this.tx_Estados_Mod;
+	}
+
+	public void setTx_Estados_Mod(java.lang.String tx_Estados_Mod) {
+		this.tx_Estados_Mod = tx_Estados_Mod;
+	}
+
 	public TMapMonitoreoDO(java.lang.Long nuIdMonitoreo,
 			java.lang.Integer nuNroCaso, java.lang.String txTipoSuperv,
 			java.lang.String txCodAccion, java.lang.String txExpediente,
 			java.lang.String txAccion, java.lang.String txFuenteSup,
 			java.lang.String txCodEmergSup, java.lang.String txLugarEmergSup,
-			java.lang.String txCodSinadaSup) {
+			java.lang.String txCodSinadaSup, char tx_Orientativasup,
+			java.util.Date fe_Fecreunionsup,
+			java.time.LocalTime fe_Horinireunionsup,
+			java.time.LocalTime fe_Horfinreunionsup,
+			java.lang.String tx_Docadminsup, java.lang.String tx_Adminsup,
+			java.lang.String tx_Actfuncadminsup,
+			java.lang.String tx_Etapafuncadminsup,
+			java.lang.String tx_Estadofuncadminsup,
+			java.lang.String tx_Unifis_Adminsup,
+			java.lang.String tx_Direcadmin, java.lang.String tx_Depadminsup,
+			java.lang.String tx_Provadminsup, java.lang.String tx_Distadminsup,
+			java.util.Date fe_Progsup, java.util.Date fe_Iniciosup,
+			java.time.LocalTime fe_Horainisup, java.util.Date fe_Finalsup,
+			java.time.LocalTime fe_Horafinsup,
+			java.lang.String tx_Codcoordinacion,
+			java.lang.String tx_Codsubsector, java.lang.String tx_Usuario,
+			java.lang.String tx_Estados_Orig, java.lang.String tx_Estados_Mod) {
 		this.nuIdMonitoreo = nuIdMonitoreo;
 		this.nuNroCaso = nuNroCaso;
 		this.txTipoSuperv = txTipoSuperv;
@@ -131,6 +387,30 @@ public class TMapMonitoreoDO implements java.io.Serializable {
 		this.txCodEmergSup = txCodEmergSup;
 		this.txLugarEmergSup = txLugarEmergSup;
 		this.txCodSinadaSup = txCodSinadaSup;
+		this.tx_Orientativasup = tx_Orientativasup;
+		this.fe_Fecreunionsup = fe_Fecreunionsup;
+		this.fe_Horinireunionsup = fe_Horinireunionsup;
+		this.fe_Horfinreunionsup = fe_Horfinreunionsup;
+		this.tx_Docadminsup = tx_Docadminsup;
+		this.tx_Adminsup = tx_Adminsup;
+		this.tx_Actfuncadminsup = tx_Actfuncadminsup;
+		this.tx_Etapafuncadminsup = tx_Etapafuncadminsup;
+		this.tx_Estadofuncadminsup = tx_Estadofuncadminsup;
+		this.tx_Unifis_Adminsup = tx_Unifis_Adminsup;
+		this.tx_Direcadmin = tx_Direcadmin;
+		this.tx_Depadminsup = tx_Depadminsup;
+		this.tx_Provadminsup = tx_Provadminsup;
+		this.tx_Distadminsup = tx_Distadminsup;
+		this.fe_Progsup = fe_Progsup;
+		this.fe_Iniciosup = fe_Iniciosup;
+		this.fe_Horainisup = fe_Horainisup;
+		this.fe_Finalsup = fe_Finalsup;
+		this.fe_Horafinsup = fe_Horafinsup;
+		this.tx_Codcoordinacion = tx_Codcoordinacion;
+		this.tx_Codsubsector = tx_Codsubsector;
+		this.tx_Usuario = tx_Usuario;
+		this.tx_Estados_Orig = tx_Estados_Orig;
+		this.tx_Estados_Mod = tx_Estados_Mod;
 	}
 
 }
