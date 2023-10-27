@@ -7,29 +7,188 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMvcDocumSup implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVCDOCUMSUP_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMVCDOCUMSUP_ID_GENERATOR", sequenceName = "TMVCDOCUMSUP_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMVCDOCUMSUP_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMVCDOCUMSUP_ID_GENERATOR", sequenceName = "TMVCDOCUMSUP_ID_SEQ")
+	private java.lang.Long nu_Id_Docum_Sup;
 
-    public TMvcDocumSup() {
-    }
-    
-    public TMvcDocumSup(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Integer nu_Correlativo_Doc;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codaccion;
 
+	private java.lang.String tx_Expediente;
 
+	private java.lang.String tx_Docadminsup;
 
+	private java.lang.String tx_Codcoordinacion;
+
+	private java.util.Date fe_Usureg;
+
+	private java.util.Date fe_Usumod;
+
+	private java.util.Date fe_Usuapr;
+
+	private java.util.Date fe_Deriva;
+
+	private java.lang.String tx_Usuario_Reg;
+
+	private java.lang.String tx_Usuario_Mod;
+
+	private java.lang.String tx_Usuario_Apr;
+
+	private java.lang.String tx_Usuario_Der;
+
+	private java.lang.String tx_Estado;
+
+	public TMvcDocumSup() {
+	}
+
+	public java.lang.Long getNu_Id_Docum_Sup() {
+		return this.nu_Id_Docum_Sup;
+	}
+
+	public void setNu_Id_Docum_Sup(java.lang.Long nu_Id_Docum_Sup) {
+		this.nu_Id_Docum_Sup = nu_Id_Docum_Sup;
+	}
+
+	public java.lang.Integer getNu_Correlativo_Doc() {
+		return this.nu_Correlativo_Doc;
+	}
+
+	public void setNu_Correlativo_Doc(java.lang.Integer nu_Correlativo_Doc) {
+		this.nu_Correlativo_Doc = nu_Correlativo_Doc;
+	}
+
+	public java.lang.String getTx_Codaccion() {
+		return this.tx_Codaccion;
+	}
+
+	public void setTx_Codaccion(java.lang.String tx_Codaccion) {
+		this.tx_Codaccion = tx_Codaccion;
+	}
+
+	public java.lang.String getTx_Expediente() {
+		return this.tx_Expediente;
+	}
+
+	public void setTx_Expediente(java.lang.String tx_Expediente) {
+		this.tx_Expediente = tx_Expediente;
+	}
+
+	public java.lang.String getTx_Docadminsup() {
+		return this.tx_Docadminsup;
+	}
+
+	public void setTx_Docadminsup(java.lang.String tx_Docadminsup) {
+		this.tx_Docadminsup = tx_Docadminsup;
+	}
+
+	public java.lang.String getTx_Codcoordinacion() {
+		return this.tx_Codcoordinacion;
+	}
+
+	public void setTx_Codcoordinacion(java.lang.String tx_Codcoordinacion) {
+		this.tx_Codcoordinacion = tx_Codcoordinacion;
+	}
+
+	public java.util.Date getFe_Usureg() {
+		return this.fe_Usureg;
+	}
+
+	public void setFe_Usureg(java.util.Date fe_Usureg) {
+		this.fe_Usureg = fe_Usureg;
+	}
+
+	public java.util.Date getFe_Usumod() {
+		return this.fe_Usumod;
+	}
+
+	public void setFe_Usumod(java.util.Date fe_Usumod) {
+		this.fe_Usumod = fe_Usumod;
+	}
+
+	public java.util.Date getFe_Usuapr() {
+		return this.fe_Usuapr;
+	}
+
+	public void setFe_Usuapr(java.util.Date fe_Usuapr) {
+		this.fe_Usuapr = fe_Usuapr;
+	}
+
+	public java.util.Date getFe_Deriva() {
+		return this.fe_Deriva;
+	}
+
+	public void setFe_Deriva(java.util.Date fe_Deriva) {
+		this.fe_Deriva = fe_Deriva;
+	}
+
+	public java.lang.String getTx_Usuario_Reg() {
+		return this.tx_Usuario_Reg;
+	}
+
+	public void setTx_Usuario_Reg(java.lang.String tx_Usuario_Reg) {
+		this.tx_Usuario_Reg = tx_Usuario_Reg;
+	}
+
+	public java.lang.String getTx_Usuario_Mod() {
+		return this.tx_Usuario_Mod;
+	}
+
+	public void setTx_Usuario_Mod(java.lang.String tx_Usuario_Mod) {
+		this.tx_Usuario_Mod = tx_Usuario_Mod;
+	}
+
+	public java.lang.String getTx_Usuario_Apr() {
+		return this.tx_Usuario_Apr;
+	}
+
+	public void setTx_Usuario_Apr(java.lang.String tx_Usuario_Apr) {
+		this.tx_Usuario_Apr = tx_Usuario_Apr;
+	}
+
+	public java.lang.String getTx_Usuario_Der() {
+		return this.tx_Usuario_Der;
+	}
+
+	public void setTx_Usuario_Der(java.lang.String tx_Usuario_Der) {
+		this.tx_Usuario_Der = tx_Usuario_Der;
+	}
+
+	public java.lang.String getTx_Estado() {
+		return this.tx_Estado;
+	}
+
+	public void setTx_Estado(java.lang.String tx_Estado) {
+		this.tx_Estado = tx_Estado;
+	}
+
+	public TMvcDocumSup(java.lang.Long nu_Id_Docum_Sup,
+			java.lang.Integer nu_Correlativo_Doc,
+			java.lang.String tx_Codaccion, java.lang.String tx_Expediente,
+			java.lang.String tx_Docadminsup,
+			java.lang.String tx_Codcoordinacion, java.util.Date fe_Usureg,
+			java.util.Date fe_Usumod, java.util.Date fe_Usuapr,
+			java.util.Date fe_Deriva, java.lang.String tx_Usuario_Reg,
+			java.lang.String tx_Usuario_Mod, java.lang.String tx_Usuario_Apr,
+			java.lang.String tx_Usuario_Der, java.lang.String tx_Estado) {
+		this.nu_Id_Docum_Sup = nu_Id_Docum_Sup;
+		this.nu_Correlativo_Doc = nu_Correlativo_Doc;
+		this.tx_Codaccion = tx_Codaccion;
+		this.tx_Expediente = tx_Expediente;
+		this.tx_Docadminsup = tx_Docadminsup;
+		this.tx_Codcoordinacion = tx_Codcoordinacion;
+		this.fe_Usureg = fe_Usureg;
+		this.fe_Usumod = fe_Usumod;
+		this.fe_Usuapr = fe_Usuapr;
+		this.fe_Deriva = fe_Deriva;
+		this.tx_Usuario_Reg = tx_Usuario_Reg;
+		this.tx_Usuario_Mod = tx_Usuario_Mod;
+		this.tx_Usuario_Apr = tx_Usuario_Apr;
+		this.tx_Usuario_Der = tx_Usuario_Der;
+		this.tx_Estado = tx_Estado;
+	}
 
 }
