@@ -7,29 +7,61 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMapSubsectorDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPSUBSECTORDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMAPSUBSECTORDO_ID_GENERATOR", sequenceName = "TMAPSUBSECTORDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMAPSUBSECTORDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMAPSUBSECTORDO_ID_GENERATOR", sequenceName = "TMAPSUBSECTORDO_ID_SEQ")
+	private java.lang.Long nu_Id_Subsector;
 
-    public TMapSubsectorDO() {
-    }
-    
-    public TMapSubsectorDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codsubsector;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Subsector;
 
+	private java.lang.String tx_Sigla;
 
+	public TMapSubsectorDO() {
+	}
 
+	public java.lang.Long getNu_Id_Subsector() {
+		return this.nu_Id_Subsector;
+	}
+
+	public void setNu_Id_Subsector(java.lang.Long nu_Id_Subsector) {
+		this.nu_Id_Subsector = nu_Id_Subsector;
+	}
+
+	public java.lang.String getTx_Codsubsector() {
+		return this.tx_Codsubsector;
+	}
+
+	public void setTx_Codsubsector(java.lang.String tx_Codsubsector) {
+		this.tx_Codsubsector = tx_Codsubsector;
+	}
+
+	public java.lang.String getTx_Subsector() {
+		return this.tx_Subsector;
+	}
+
+	public void setTx_Subsector(java.lang.String tx_Subsector) {
+		this.tx_Subsector = tx_Subsector;
+	}
+
+	public java.lang.String getTx_Sigla() {
+		return this.tx_Sigla;
+	}
+
+	public void setTx_Sigla(java.lang.String tx_Sigla) {
+		this.tx_Sigla = tx_Sigla;
+	}
+
+	public TMapSubsectorDO(java.lang.Long nu_Id_Subsector,
+			java.lang.String tx_Codsubsector, java.lang.String tx_Subsector,
+			java.lang.String tx_Sigla) {
+		this.nu_Id_Subsector = nu_Id_Subsector;
+		this.tx_Codsubsector = tx_Codsubsector;
+		this.tx_Subsector = tx_Subsector;
+		this.tx_Sigla = tx_Sigla;
+	}
 
 }
