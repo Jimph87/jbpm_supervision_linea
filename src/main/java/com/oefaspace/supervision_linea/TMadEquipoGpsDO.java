@@ -7,29 +7,95 @@ package com.oefaspace.supervision_linea;
 @javax.persistence.Entity
 public class TMadEquipoGpsDO implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMADEQUIPOGPSDO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TMADEQUIPOGPSDO_ID_GENERATOR", sequenceName = "TMADEQUIPOGPSDO_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TMADEQUIPOGPSDO_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "TMADEQUIPOGPSDO_ID_GENERATOR", sequenceName = "TMADEQUIPOGPSDO_ID_SEQ")
+	private java.lang.Long nu_Id_Equipo_Gps;
 
-    public TMadEquipoGpsDO() {
-    }
-    
-    public TMadEquipoGpsDO(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Integer nu_Nrocaso;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String tx_Codaccion;
 
+	private java.lang.String tx_Expediente;
 
+	private java.lang.String tx_Codequipgps;
 
+	private java.lang.String tx_Marcagps;
+
+	private java.lang.String tx_Sistemagps;
+
+	public TMadEquipoGpsDO() {
+	}
+
+	public java.lang.Long getNu_Id_Equipo_Gps() {
+		return this.nu_Id_Equipo_Gps;
+	}
+
+	public void setNu_Id_Equipo_Gps(java.lang.Long nu_Id_Equipo_Gps) {
+		this.nu_Id_Equipo_Gps = nu_Id_Equipo_Gps;
+	}
+
+	public java.lang.Integer getNu_Nrocaso() {
+		return this.nu_Nrocaso;
+	}
+
+	public void setNu_Nrocaso(java.lang.Integer nu_Nrocaso) {
+		this.nu_Nrocaso = nu_Nrocaso;
+	}
+
+	public java.lang.String getTx_Codaccion() {
+		return this.tx_Codaccion;
+	}
+
+	public void setTx_Codaccion(java.lang.String tx_Codaccion) {
+		this.tx_Codaccion = tx_Codaccion;
+	}
+
+	public java.lang.String getTx_Expediente() {
+		return this.tx_Expediente;
+	}
+
+	public void setTx_Expediente(java.lang.String tx_Expediente) {
+		this.tx_Expediente = tx_Expediente;
+	}
+
+	public java.lang.String getTx_Codequipgps() {
+		return this.tx_Codequipgps;
+	}
+
+	public void setTx_Codequipgps(java.lang.String tx_Codequipgps) {
+		this.tx_Codequipgps = tx_Codequipgps;
+	}
+
+	public java.lang.String getTx_Marcagps() {
+		return this.tx_Marcagps;
+	}
+
+	public void setTx_Marcagps(java.lang.String tx_Marcagps) {
+		this.tx_Marcagps = tx_Marcagps;
+	}
+
+	public java.lang.String getTx_Sistemagps() {
+		return this.tx_Sistemagps;
+	}
+
+	public void setTx_Sistemagps(java.lang.String tx_Sistemagps) {
+		this.tx_Sistemagps = tx_Sistemagps;
+	}
+
+	public TMadEquipoGpsDO(java.lang.Long nu_Id_Equipo_Gps,
+			java.lang.Integer nu_Nrocaso, java.lang.String tx_Codaccion,
+			java.lang.String tx_Expediente, java.lang.String tx_Codequipgps,
+			java.lang.String tx_Marcagps, java.lang.String tx_Sistemagps) {
+		this.nu_Id_Equipo_Gps = nu_Id_Equipo_Gps;
+		this.nu_Nrocaso = nu_Nrocaso;
+		this.tx_Codaccion = tx_Codaccion;
+		this.tx_Expediente = tx_Expediente;
+		this.tx_Codequipgps = tx_Codequipgps;
+		this.tx_Marcagps = tx_Marcagps;
+		this.tx_Sistemagps = tx_Sistemagps;
+	}
 
 }
