@@ -9,6 +9,7 @@
         <class>com.oefaspace.supervision_linea.TMapSectorDO</class>
         <class>com.oefaspace.supervision_linea.TMapSubsectorDO</class>
         <class>com.oefaspace.supervision_linea.TMapFuenteSup</class>
+        <class>com.oefaspace.supervision_linea.TMapEstadosDO</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
